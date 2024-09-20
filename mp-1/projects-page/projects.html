@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<!-- Language: English -->
+<html lang="en">
+
+    <!-- Meta Data -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Projects | Personal Website</title>
+        <link rel="stylesheet" href="projects.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    </head>
+
+    <body>
+
+        <div id="page-wrapper">
+            <header>
+                <div class="header-content-box">
+                    <h1 class="name">Projects</h1>
+                    <p class="intro">JS calc project</p>
+                </div>
+                 
+            </header>
+    
+            <!-- Navbar and Main Content -->
+            <div class="content-container">
+                <!-- Navigation Bar (At least 6 internal links) -->
+                <nav>
+                    <ul class="nav-bar">
+                        <li><a href="../home/index.html">Home</a></li>
+                        <li><a href="../experience-page/experience.html">Experience</a></li>
+                        <li><a href="../projects-page/projects.html">Projects</a></li>
+                        <li><a href="../courses-page/courses.html">Courses</a></li>
+                        <li><a href="../activities-page/activities.html">Activities</a></li>
+                        <li><a href="../contact-page/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+    
+                <!-- Main content of the page -->
+                <main class="main-content">
+    
+                    <div class="inputs">
+                        <label for="first">1st Number: </label><input type="text" id="first">
+                        <br>
+                        <label for="second">1st Number: </label><input type="text" id="second">
+                    </div>
+    
+                    <br>
+                    
+                    <div class="buttons">
+                        <button onclick="addition()"> + </button>
+                        <button onclick="subtraction()"> - </button>
+                        <button onclick="multiplication()"> * </button>
+                        <button onclick="division()"> / </button>
+                        <button onclick="pow()"> ** </button>
+                        <button onclick="clearinputs()">Clear</button>
+                    </div>
+                    <br>
+                    <p id="output"></p>
+                </main>
+            </div>
+    
+            <footer>
+                <div class="footer-container">
+                    <p class="copy">All Rights Reserved By Sena Bayram <a href="../home/index.html">Credits</a>&copy;</p>
+                </div>
+            </footer>
+        </div>
+        
+
+        <script src="projects.js"></script>
+    </body>
+
+</html>

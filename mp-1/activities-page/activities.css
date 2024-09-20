@@ -1,0 +1,171 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon";
+    color: #feffff;  
+    align-content: center;
+}
+
+#page-wrapper
+{
+    margin: 0 auto;
+    width: 80vw;
+}
+
+header{
+    width: 100%;
+    background-color:#2b7a78;
+    color:#17252a;
+    align-content: left;
+}
+
+/* Handling text on the header as a box */
+.header-content-box
+{
+    max-width: 30%;
+    text-align: center;
+    padding: 1% 0.5%;
+    font-size: 85%;
+}
+
+/*Navbar and Main Content*/
+.content-container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/*NAVBAR*/
+
+nav {   
+    width: 20%; /*For screens bigger than 750-px: should not exceed 30% of the width of its parent*/
+    padding: 1% 1%;
+    background-color: #17252a;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column; /* Displaying navbar as column */
+    list-style-type: none; /*Removing dots from list items */
+}
+
+nav ul li{
+    background-color:#2b7a78;
+    padding:2% 2%;
+    text-align: center;
+    margin-bottom: 10%; /*space between each li*/
+}
+
+nav a {
+    text-decoration:none; /*removing underline of the links */
+    color: #def2f1;
+    font-weight: bold;
+    font-size: calc(2px + 1vw);
+}
+
+/* MAIN CONTENT */
+.main-content{
+    background-color: #3aafa9; /*or c7ddf8*/
+    width: 80%;
+    padding: 3%;
+    height: 100vh;
+    font-size: 130%;
+    text-align: center;
+    height: auto;
+    align-content: center;
+
+}
+
+/* TABLE */
+table{
+    margin: auto; /*Centering table horizontally.*/
+    text-align: center;
+    background-color:#3aafa9;
+}
+
+td{
+    text-align: center;
+    color:#003559;
+    max-width: 70%;
+}
+
+tr{
+}
+
+img{
+    border-radius: 10px;
+    margin: 5% 0;
+    max-width: 70%;
+}
+
+
+
+/* FOOTER */
+footer{
+    background-color:black;
+    padding: 10vh 0;
+    text-align: center;
+    color: #def2f1;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 750px)
+{
+    .content-container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav
+    {
+        width: 100%;
+    }
+
+    /* should occupy 100% of the width of its parent and appear horizontal */
+    nav ul
+    {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    
+
+    nav ul li{
+        margin: 1%; /*margin for each li*/
+    }
+
+    nav a{
+        font-size: calc(2px + 2vw);
+    }
+
+
+    /* the content should be aligned center */
+    header 
+    {
+        align-content: center;
+
+    }
+    .header-content-box
+    {
+        margin: auto;
+        max-width: 50%;
+    }
+
+    img{
+        max-width: 80%;
+    }
+
+    .main-content
+    {
+        width: 100%;
+        height: auto;
+    }
+    
+}
