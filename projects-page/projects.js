@@ -3,7 +3,8 @@
 function getValues()
 {
 
-    if(document.getElementById("first").value === "" || document.getElementById("second").value === "")
+    if(document.getElementById("first").value === "" || document.getElementById("second").value === "" 
+    || isNaN(document.getElementById("first").value) || isNaN(document.getElementById("second").value))
     {
         displayResult("Please enter a number");
         return;
